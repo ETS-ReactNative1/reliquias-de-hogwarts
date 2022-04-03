@@ -3,31 +3,25 @@ import { makeStyles } from "@material-ui/styles";
 export default makeStyles(theme => ({
   container: {
     height: "100vh",
-    width: "100vw",
-    display: "flex",
+    width: "100wh",
+    position: "relative",
     justifyContent: "center",
     alignItems: "center",
-    position: "absolute",
-    top: 0,
-    left: 0,
   },
   logotypeContainer: {
     backgroundColor: theme.palette.primary.main,
-    width: "60%",
+    width: "100%",
     height: "100%",
-    display: "flex",
-    flexDirection: "column",
+    margin: "0 auto",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.down("md")]: {
-      width: "50%",
-    },
     [theme.breakpoints.down("md")]: {
       display: "none",
     },
   },
   logotypeImage: {
     width: 165,
+    margin: "0 auto",
     marginBottom: theme.spacing(4),
   },
   logotypeText: {
@@ -40,7 +34,7 @@ export default makeStyles(theme => ({
   },
   formContainer: {
     width: "40%",
-    height: "100%",
+    height: "60%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -48,9 +42,13 @@ export default makeStyles(theme => ({
     [theme.breakpoints.down("md")]: {
       width: "50%",
     },
+    top: "20%",
+    right: "30%",
+    position: "absolute",
+    background: "BLACK",
   },
   form: {
-    width: 320,
+    width: "50%",
   },
   tab: {
     fontWeight: 400,
